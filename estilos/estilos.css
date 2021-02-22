@@ -1,0 +1,621 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'roboto', sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #095e49;
+  font-size: 17px;
+  font-weight: 500; }
+
+.container, .historia__container__imagenes {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.header {
+  background-color: #1fab89;
+  padding: 0%; }
+  .header div img {
+    object-fit: cover;
+    object-position: 40% 50%; }
+
+.footer {
+  color: #727170;
+  display: inline-flex;
+  flex-direction: column;
+  bottom: 0; }
+
+.footer__return {
+  display: flex;
+  justify-content: flex-end; }
+
+.margin-0 {
+  margin: 0px; }
+
+.padding-o {
+  padding: 0px; }
+
+.parallax, .parallax2 {
+  background: #fff fixed no-repeat 50% 50%;
+  background-size: cover;
+  border-top: 2px #1fab89 solid;
+  border-bottom: 2px #1fab89 solid; }
+
+.parallax2 {
+  background: #fff fixed no-repeat 50% 20%; }
+
+/*Baner */
+.header__caja-baner {
+  position: relative;
+  width: 100%; }
+
+.header__navegacion__baner {
+  width: 100%;
+  height: 70vh;
+  max-height: 70vh;
+  /*  background-image: url(imagenes/amacer-en-el-avila-vista.jpg); */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 2000%; }
+
+.carousel-item {
+  height: 70vh;
+  width: 100%; }
+
+.header__caja-baner__titulo {
+  color: white;
+  margin-bottom: 0;
+  font-family: 'Paytone One' , sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: fromLeft 2s; }
+
+.header__caja-baner__sub-titulo {
+  color: white;
+  margin-bottom: 0;
+  font-family: 'Paytone One' , sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  position: absolute;
+  top: 89%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: fromLeftSlow 2s; }
+
+@keyframes fromLeft {
+  0% {
+    left: -10%; }
+  100% {
+    left: 50%; } }
+
+@keyframes fromLeftSlow {
+  0% {
+    left: -30%; }
+  100% {
+    left: 50%; } }
+
+.header__topper {
+  position: relative;
+  color: white;
+  font-family: 'Paytone One' , sans-serif;
+  font-weight: 300;
+  border-bottom: white solid 1px; }
+
+.header__caja-baner__barra {
+  opacity: 50%;
+  background-color: black;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 70%;
+  z-index: 1; }
+
+/*Baner */
+/* Nav */
+.header__navegacion {
+  width: 100%;
+  background-color: #1fab89;
+  font-size: 10px;
+  font-weight: 200;
+  font-family: 'paytone one', sans-serif; }
+  .header__navegacion img {
+    height: 40px;
+    margin-top: 1px;
+    top: 0;
+    animation: fade 2s;
+    transition: 0.5s; }
+    .header__navegacion img:hover {
+      height: 42px;
+      transition: 0.5s; }
+
+.silueta-navbar {
+  position: relative;
+  height: 100%; }
+
+@keyframes fade {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+.header__navegacion__menu {
+  list-style: none;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: flex-end; }
+  .header__navegacion__menu li {
+    display: inline-block;
+    position: relative; }
+    .header__navegacion__menu li a {
+      display: block;
+      padding: 15px 22px;
+      color: white;
+      text-decoration: none;
+      font-size: 20px; }
+      .header__navegacion__menu li a:hover {
+        background-color: #0c4133;
+        color: #37f5c6; }
+
+.header__navegacion__menu__sub-Menu {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  padding: 0; }
+  .header__navegacion__menu__sub-Menu li {
+    background-color: #1fab89; }
+    .header__navegacion__menu__sub-Menu li a {
+      display: flex;
+      text-decoration: none;
+      padding: 15px 23px;
+      font-size: 18px;
+      height: auto; }
+
+.header__navegacion__menu li:hover .header__navegacion__menu__sub-Menu {
+  display: flex;
+  z-index: 5;
+  flex-direction: column; }
+
+/*Estilos nav-bar Bootstrap */
+.dropdown_menu {
+  min-width: 0px;
+  background-color: #1fab89; }
+
+.dropdown-menu.show {
+  display: flex;
+  flex-direction: column; }
+
+/* Estilos nav-bar Bootstrap */
+/* Nav */
+/* Animacion pajaro index */
+.guacamaya {
+  position: absolute;
+  z-index: 9999999999;
+  width: 80px;
+  height: 80px; }
+
+.guacamaya-1 {
+  top: 90px;
+  right: 1950px;
+  animation: pajaro_1 5s linear; }
+
+.guacamaya-2 {
+  top: 150px;
+  right: 1950px;
+  animation: pajaro_2 5s linear; }
+
+.guacamaya-3 {
+  top: 120px;
+  right: 1900px;
+  animation: pajaro_3 5s linear; }
+
+@keyframes pajaro_1 {
+  0% {
+    top: 550px;
+    right: 0px; }
+  25% {
+    right: 487,5px;
+    top: 137,5; }
+  50% {
+    top: 275px;
+    right: 975px; }
+  100% {
+    top: 90px;
+    right: 1950px; } }
+
+@keyframes pajaro_2 {
+  0% {
+    top: 610px;
+    right: 0px; }
+  25% {
+    right: 487,5px;
+    top: 457,5; }
+  50% {
+    top: 305px;
+    right: 975px; }
+  100% {
+    top: 150px;
+    right: 1950px; } }
+
+@keyframes pajaro_3 {
+  0% {
+    top: 580px;
+    right: -50px; }
+  25% {
+    right: 475px;
+    top: 435px; }
+  50% {
+    top: 290px;
+    right: 950px; }
+  100% {
+    top: 120px;
+    right: 1900px; } }
+
+/* Animacion pajaro index */
+/* index */
+.elParque {
+  background-color: #095e49; }
+
+.container, .historia__container__imagenes {
+  width: 100%;
+  height: auto;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .container h3, .historia__container__imagenes h3 {
+    font-size: 37px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'paytone one', sans-serif; }
+  .container h4, .historia__container__imagenes h4 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-bottom: 25px; }
+  .container p, .historia__container__imagenes p {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1,5;
+    font-weight: 200; }
+  .container img, .historia__container__imagenes img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    max-width: max-content; }
+
+.elParque div p a {
+  color: black;
+  font-size: 22px; }
+
+.ubicacion {
+  background-color: rgba(255, 246, 246, 0.973);
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%; }
+
+.actividades {
+  background-color: #0b6d54; }
+
+.actividades__fila {
+  display: flex;
+  width: 100%;
+  margin: 4% auto;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.actividades__fila__iconos {
+  color: #82c2f7;
+  font-size: 14em;
+  padding: 3%;
+  justify-content: center;
+  display: flex;
+  text-decoration: none; }
+
+/* .grid-index{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+                        "header header header header"
+                        "lasZonas lasZonas lasZonas lasZonas"
+                        "zonaA zonaA zonaB zonaB"
+                        "zonaC zonaC zonaD zonaD"
+    ;
+} */
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .carousel-item {
+    height: 15vh;
+    margin-top: 50px; }
+  .header__navegacion img {
+    height: 2rem; }
+    .header__navegacion img:hover {
+      height: 2.2rem;
+      transition: 0.5s; }
+  .header__caja-baner__titulo {
+    font-size: 17px;
+    width: 220px; }
+  .header__caja-baner__sub-titulo {
+    font-size: 15px; }
+  .container, .historia__container__imagenes {
+    padding: 40px; }
+    .container h3, .historia__container__imagenes h3 {
+      font-size: 27px; }
+    .container p, .historia__container__imagenes p {
+      font-size: 20px;
+      font-weight: 0; } }
+
+/* index */
+/* Zonas */
+.grid-zonas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header header header header" "lasZonas lasZonas lasZonas lasZonas" "zonaA zonaA zonaA zonaA" "zonaB zonaB zonaB zonaB" "zonaC zonaC zonaC zonaC" "zonaD zonaD zonaD zonaD"; }
+
+.header {
+  grid-area: header; }
+
+#lasZonas {
+  grid-area: lasZonas; }
+
+#zonaA {
+  grid-area: zonaA; }
+
+#zonaB {
+  grid-area: zonaB; }
+
+#zonaC {
+  grid-area: zonaC; }
+
+#zonaD {
+  grid-area: zonaD; }
+
+.container__containerZonas {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 5px #163125;
+  background-color: rgba(53, 136, 100, 0.712);
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  border: white solid 0.5px; }
+  .container__containerZonas img {
+    width: 100%;
+    height: 100%;
+    max-width: 538px;
+    max-height: 525px;
+    border: 3px solid white;
+    padding: 0px;
+    margin: 2px auto;
+    align-self: center; }
+
+.container__banerZonas img {
+  width: 100%;
+  height: auto; }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid-zonas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header" "lasZonas" "zonaA" "zonaB" "zonaC" "zonaD"; } }
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .grid-zonas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header" "lasZonas" "zonaA" "zonaB" "zonaC" "zonaD"; } }
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .grid-zonas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header" "lasZonas" "zonaA" "zonaB" "zonaC" "zonaD";
+    grid-gap: 5px; }
+  .header__navegacion__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .containerZonas {
+    padding: 4px; }
+  .containerZonas img {
+    width: 100%;
+    height: auto; } }
+
+/* Zonas */
+/*Estilos de la galeria */
+.galeria {
+  width: 90%;
+  background-color: #9df3c4;
+  list-style: none;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.galeria img {
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0px #1fab89;
+  transition: 0.5s; }
+
+.galeria li {
+  margin: 5px; }
+
+.galeria img {
+  width: 200px;
+  height: 100px;
+  transition: 0.5s; }
+
+.galeria img:hover {
+  width: 220px;
+  height: 110px;
+  margin: auto;
+  border-radius: 13px;
+  transition: 0.5s; }
+
+/*Estilos de la galeria */
+/* Estilos del modal de la galeria */
+.modal {
+  visibility: hidden;
+  opacity: 0; }
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s; }
+
+.modal h3 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin: 15px 0; }
+
+.imagen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.imagen a {
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+  margin: 0 10px; }
+
+.imagen a:nth-child(2) {
+  margin: 0;
+  height: 100%;
+  flex-shrink: 2; }
+
+.imagen img {
+  width: 500px;
+  height: 100%;
+  max-width: 100%;
+  border: 7px solid #fff;
+  box-sizing: border-box; }
+
+.cerrar {
+  display: block;
+  background: #fff;
+  width: 25px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  padding: 1px;
+  border-radius: 50%;
+  line-height: 25px; }
+
+/* Estilos del modal de la galeria */
+/* Historia y Geografia */
+#div__historia {
+  background-image: url(/imagenes/lets_enhance/historia_avila.jpg);
+  width: 100%;
+  height: 500px; }
+
+#div__geografia {
+  background-image: url(/imagenes/lets_enhance/historia_avila2_photos_v2_x2_colored_toned.jpg);
+  width: 100%;
+  height: 500px; }
+
+.historia__container__imagenes {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 500px; }
+
+.hitoria__container__imagenes__imagenes {
+  width: 100%;
+  height: 100%; }
+
+.geografia__container__imagenes__imagenes {
+  width: 100%;
+  height: 100%; }
+
+#div__humbolt {
+  background-image: url(/imagenes/Hotel_humnolt.jpg);
+  width: 100%;
+  height: 500px; }
+
+/* Historia y Geografia */
+/* Contacto */
+.boxContacto {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header header header header" "map map map map" "form2 form2 form3 form3"; }
+
+.boxContacto .header {
+  grid-area: header;
+  height: auto; }
+
+.boxContacto .formContacto1 {
+  grid-area: form1;
+  display: flex;
+  justify-content: center;
+  background-color: #3fe48973; }
+
+.boxContacto .formContacto2 {
+  grid-area: form2;
+  display: flex;
+  justify-content: center;
+  background-color: #9df3c4; }
+
+.boxContacto .formContacto3 {
+  grid-area: form3;
+  color: white;
+  /*     display: flex;
+    justify-content: center;
+    background-color: #9df3c4 */ }
+
+.boxContacto .container, .boxContacto .historia__container__imagenes {
+  grid-area: map; }
+
+.mapaContacto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  width: 80%; }
+
+/* Contacto */
