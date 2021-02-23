@@ -28,14 +28,12 @@ body {
     object-position: 40% 50%; }
 
 .footer {
-  color: #727170;
+  color: #fffefe;
   display: inline-flex;
   flex-direction: column;
-  bottom: 0; }
-
-.footer__return {
-  display: flex;
-  justify-content: flex-end; }
+  bottom: 0;
+  background-color: #1fab89;
+  width: 100%; }
 
 .margin-0 {
   margin: 0px; }
@@ -68,7 +66,7 @@ body {
   top: 2000%; }
 
 .carousel-item {
-  height: 70vh;
+  height: 600px;
   width: 100%; }
 
 .header__caja-baner__titulo {
@@ -343,7 +341,7 @@ body {
 } */
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .carousel-item {
-    height: 15vh;
+    height: 120px;
     margin-top: 50px; }
   .header__navegacion img {
     height: 2rem; }
@@ -362,6 +360,57 @@ body {
     .container p, .historia__container__imagenes p {
       font-size: 20px;
       font-weight: 0; } }
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .carousel-item {
+    height: 220px;
+    margin-top: 50px; }
+  .header__navegacion img {
+    height: 2rem; }
+    .header__navegacion img:hover {
+      height: 2.2rem;
+      transition: 0.5s; }
+  .header__caja-baner__titulo {
+    font-size: 20px;
+    width: 260px; }
+  .header__caja-baner__sub-titulo {
+    font-size: 17px; }
+  .container, .historia__container__imagenes {
+    padding: 40px; }
+    .container h3, .historia__container__imagenes h3 {
+      font-size: 27px; }
+    .container p, .historia__container__imagenes p {
+      font-size: 20px;
+      font-weight: 0; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .carousel-item {
+    height: 220px;
+    margin-top: 50px; }
+  .header__navegacion img {
+    height: 2rem; }
+    .header__navegacion img:hover {
+      height: 2.2rem;
+      transition: 0.5s; }
+  .header__caja-baner__titulo {
+    font-size: 23px;
+    width: 290px; }
+  .header__caja-baner__sub-titulo {
+    font-size: 19px; }
+  .container, .historia__container__imagenes {
+    padding: 40px; }
+    .container h3, .historia__container__imagenes h3 {
+      font-size: 27px; }
+    .container p, .historia__container__imagenes p {
+      font-size: 20px;
+      font-weight: 0; }
+  .actividades__fila {
+    display: flex;
+    width: 100%;
+    margin: 4% auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px; } }
 
 /* index */
 /* Zonas */
