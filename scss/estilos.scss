@@ -425,8 +425,11 @@ body {
 @media only screen and (min-width:320px) and (max-width:600px){
     
     .carousel-item{
-        height: 140px;
+        height: 160px;
         margin-top: 50px;
+            img{
+                height: 100%;
+            }
     }
 
     .header__navegacion{
