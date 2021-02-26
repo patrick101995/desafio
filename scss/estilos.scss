@@ -425,10 +425,11 @@ body {
 @media only screen and (min-width:320px) and (max-width:600px){
     
     .carousel-item{
-        height: 160px;
+        height: 170px;
         margin-top: 50px;
             img{
                 height: 100%;
+                object-position: 40% 50%;
             }
     }
 
@@ -475,6 +476,17 @@ body {
         height: 220px;
         margin-top: 50px;
     }
+
+    .header{
+        background-color: #1fab89;
+        padding:0%;
+        div{ 
+            img{
+            object-fit:cover;
+            object-position: 40% 62%;
+            }
+        }
+    }  
 
     .header__navegacion{
 
