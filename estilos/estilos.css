@@ -68,6 +68,8 @@ body {
 .carousel-item {
   height: 600px;
   width: 100%; }
+  .carousel-item img {
+    height: 100%; }
 
 .header__caja-baner__titulo {
   color: white;
@@ -660,7 +662,7 @@ body {
     justify-content: center;
     background-color: #9df3c4 */ }
 
-.boxContacto .container, .boxContacto .historia__container__imagenes {
+.boxContacto .ubicacion {
   grid-area: map; }
 
 .mapaContacto {
@@ -669,5 +671,13 @@ body {
   text-align: center;
   color: white;
   width: 80%; }
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .boxContacto {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header header" "map map map map" "form2 form2 form2 form2" "form3 form3 form3 form3"; } }
 
 /* Contacto */
